@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<radio xmlns:r="https://schemas.radiodns.org/epg/10"
+       xmlns:e="https://www.worlddab.org/schemas/epgDataTypes/14"
+       xmlns:s="https://www.worlddab.org/schemas/epgSchedule/14">
+    <r:service id="crid://http://onlineradiobox.com/us/hitzconnect/" xml:lang="en">
+        <e:link url="http://onlineradiobox.com/us/hitzconnect/" description="Listen on Onlineradiobox" />
+        <s:schedule>
+            <s:programme>
+                <e:memberOf id="crid://http://www.hitzconnect.com/schedule/?id=1" />
+                <s:time time="T03:00:00" duration="PT1H00M" recurs="WE" />
+            </s:programme>
+            <s:programme>
+                <e:memberOf id="crid://http://www.hitzconnect.com/schedule/?id=1" />
+                <s:time time="T13:00:00" duration="PT1H00M" recurs="WE" />
+            </s:programme>
+            <s:programme>
+                <e:memberOf id="crid://http://www.hitzconnect.com/schedule/?id=2" />
+                <s:time time="T13:00:00" duration="PT0H30M" recurs="TU" />
+            </s:programme>
+        </s:schedule>
+    </r:service>
+    <s:programmeGroup xml:lang="en" id="crid://http://www.hitzconnect.com/schedule/?id=1">
+        <e:shortName>SlowBounce Show with DJ Septik</e:shortName>
+        <e:longName>SlowBounce Show with DJ Septik</e:longName>
+        <presenter />
+        <e:longDescription>Straight from Belgium, DJ Septik brings you the latest Dancehall &amp; Tropical Bass Music.</e:longDescription>
+        <e:link description="Home Page" url="http://www.hitzconnect.com/schedule/?id=1" />
+        <image href="https://cdn.onlineradiobox.net/programs/slow_bounce.png" />
+    </s:programmeGroup>
+    <s:programmeGroup xml:lang="en" id="crid://http://www.hitzconnect.com/schedule/?id=2">
+        <e:shortName>Power in a Half Hour with Coach Mark</e:shortName>
+        <e:longName />
+        <presenter />
+        <image href="https://cdn.onlineradiobox.net/programs/power.jpg" />
+        <e:longDescription>Coach Mark shares the success tips, tricks, and techniques of the Millionaires and Billionaires of the last 100 years.</e:longDescription>
+        <e:link description="Home Page" url="http://www.hitzconnect.com/schedule/?id=2" />
+    </s:programmeGroup>
+</radio>
